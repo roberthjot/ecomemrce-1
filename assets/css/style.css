@@ -126,6 +126,7 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--gray-color);
 }
+
 /*===== NAV =====*/
 .nav{
     height: var(--header-height);
@@ -138,12 +139,12 @@ img{
     .nav__menu{
         position: fixed;
         top: var(--header-height);
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--white-color);
-        transition: .5;
+        transition: .5s;
     }
 }
 
@@ -155,4 +156,111 @@ img{
     color: var(--dark-color);
     font-weight: var(--font-semi);
 }
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__logo{
+    font-weight: var(--font-bold);
+}
+
+.nav__cart{
+    font-size: 1.5rem;
+    margin-right: var(--mb-2);
+}
+
+.nav__toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /*===== Show menu =====*/
+.show{
+    right: 0;
+}
+
+.active{
+    color: var(--first-color);    
+}
+/*===== HOME =====*/
+.home{
+    background-color: var(--gray-color);
+}
+
+.home__container{
+    height: calc(100vh - var(--header-height));
+}
+
+.home__data{
+    padding-top: 6rem;
+}
+
+.home__title{
+    align-self: center;
+    font-size: var(--big-font-size);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.home__title span{
+    font-size: var(--h1-font-size);
+}
+
+.home__img{
+    position: absolute;   
+    right: 0;
+    bottom: 0;
+    width: 260px;     
+}
+/*===== BUTTONS =====*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+/*===== COLLECTIONS =====*/
+.collection__container{
+    row-gap: 2rem;
+}
+
+.collection__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    background-color: var(--gray-color);
+    transition: .3s;
+}
+
+.collection__box:hover{
+    transform: translateY(-.5rem);
+}
+/*===== FEATURED PRODUCTS =====*/
+
+
+/*===== OFFER =====*/
+
+
+/*===== NEW ARRIVALS =====*/
+
+
+/*===== NEWSLETTER =====*/
+
+
+/*===== SPONSORS =====*/
+
+
+/*===== FOOTER =====*/
+
+
